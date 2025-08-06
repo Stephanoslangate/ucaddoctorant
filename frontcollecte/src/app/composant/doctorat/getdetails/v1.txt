@@ -1,0 +1,81 @@
+
+            <div class="animated fadeIn">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <strong class="card-title">Detail </strong>
+                                <a [routerLink]="['/home/doctorat-publication',currentID]" routerLinkActive="router-link-active"  class="btn btn-success">nouvelle publication</a>
+                            </div>
+
+                            <div class="card-body">
+                             @if(doctorat!==null){
+                                <p>
+                                 <a class="btn btn-warning btn-sm" style="color: white;margin: 0px 5px;"><strong>Email:</strong></a>  {{ doctorat.email }}  -
+                                 <a class="btn btn-warning btn-sm" style="color: white;margin: 0px 5px;"><strong>First_name:</strong></a>  {{ doctorat.first_name }}
+                                 <a class="btn btn-warning btn-sm" style="color: white;margin: 0px 5px;"><strong>Last_name:</strong></a>{{ doctorat.last_name }}
+                                 <a class="btn btn-warning btn-sm" style="color: white;margin: 0px 5px;"><strong>Faculte :</strong></a> {{ doctorat.faculte }}
+                                </p> 
+                                <p>
+                                     <a class="btn btn-warning btn-sm" style="color: white;margin: 0px 5px;"><strong>Telephone:</strong></a>  {{ doctorat.telephone }}  -
+                                 <a class="btn btn-warning btn-sm" style="color: white;margin: 0px 5px;"><strong>Laboratoire:</strong></a>  {{ doctorat.laboratoire }}
+                                
+                                </p>
+                                <p>
+                                    <a class="btn btn-warning btn-sm" style="color: white;margin: 0px 5px;"><strong>Doctorale:</strong></a>{{ doctorat.doctorale }}
+                                </p>
+                                <p>
+                                 <a class="btn btn-warning btn-sm" style="color: white;margin: 0px 5px;"><strong>These :</strong></a> {{ doctorat.these }}
+                                </p> 
+                                <p>
+                                    <a class="btn btn-warning btn-sm" style="color: white;margin: 0px 5px;"><strong>impact:</strong></a>{{ doctorat.impact }}
+                                </p>
+                                <p>
+                                 <a class="btn btn-warning btn-sm" style="color: white;margin: 0px 5px;"><strong>Startup:</strong></a>  {{ doctorat.startup }}  -
+                                 <a class="btn btn-warning btn-sm" style="color: white;margin: 0px 5px;"><strong>secteur:</strong></a>  {{ doctorat.secteur }}
+                                </p>
+                                <p>
+                                 <a class="btn btn-warning btn-sm" style="color: white;margin: 0px 5px;"><strong>problematique :</strong></a> {{ doctorat.problematique }}
+                                </p>
+                                <p>
+                                 <a class="btn btn-warning btn-sm" style="color: white;margin: 0px 5px;"><strong>solution :</strong></a> {{ doctorat.solution }}
+                                </p>
+                                 <p>
+                                 <a class="btn btn-warning btn-sm" style="color: white;margin: 0px 5px;"><strong>maturation :</strong></a> {{ doctorat.maturation }}
+                                </p> 
+                                 <p>
+                                 <a class="btn btn-warning btn-sm" style="color: white;margin: 0px 5px;"><strong>interet :</strong></a> {{ doctorat.interet }}
+                                </p>
+                                  <p>
+                                 <a class="btn btn-warning btn-sm" style="color: white;margin: 0px 5px;"><strong>competences :</strong></a> {{ doctorat.competences }}
+                                </p> 
+                                  <p>
+                                 <a class="btn btn-warning btn-sm" style="color: white;margin: 0px 5px;"><strong>domaine_recherche :</strong></a> {{ doctorat.domaine_recherche }}
+                                </p> 
+                                 <p>
+                                 <a class="btn btn-warning btn-sm" style="color: white;margin: 0px 5px;"><strong>motscles :</strong></a> {{ doctorat.motscles }}
+                                </p>
+                                <p>
+                                 <a class="btn btn-warning btn-sm" style="color: white;margin: 0px 5px;"><strong>publication :</strong></a> {{ doctorat.publication }}
+                                </p>  
+                                 <p>
+                                 <a class="btn btn-warning btn-sm" style="color: white;margin: 0px 5px;"><strong>publication_faire :</strong></a> {{ doctorat.publication_faire }}
+                                </p>
+                                  <p>
+                                 <a class="btn btn-warning btn-sm" style="color: white;margin: 0px 5px;"><strong>souhait :</strong></a> {{ doctorat.souhait }}
+                                </p>
+                                  <p>
+                                 <a class="btn btn-warning btn-sm" style="color: white;margin: 0px 5px;"><strong>cv :</strong></a> {{ doctorat.cv }}
+                                </p>  
+                             }     
+                                    
+                                 
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div><!-- .animated -->
+       

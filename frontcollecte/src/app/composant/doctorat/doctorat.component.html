@@ -1,0 +1,205 @@
+ <div class="animated fadeIn">
+
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <strong>Ajout de</strong> <small> Doctorant</small>
+                            </div>
+                        
+                            <div class="card-body card-block">
+                            <form  [formGroup]="doctoratForm" (ngSubmit)="onSave()">
+                                <div class="row">
+                                        <div class="form-group ">
+                                    <label class=" form-control-label">last_name</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                        <input class="form-control" formControlName="last_name">
+                                    </div>
+                                </div>
+                                <div class="form-group" >
+                                    <label class=" form-control-label">first_name</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                                        <input class="form-control" formControlName="first_name">
+                                    </div>
+                                </div>
+                                 <div class="form-group" >
+                                    <label class=" form-control-label">Email</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                                        <input class="form-control" formControlName="email">
+                                    </div>
+                                </div>
+                                <div class="form-group" >
+                                    <label class=" form-control-label">Telephone </label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-usd"></i></div>
+                                        <input class="form-control" formControlName="telephone">
+                                    </div>
+                                </div>
+                                </div>
+                               <div class="row">
+                                        <div class="form-group ">
+                                    <label class=" form-control-label">Faculte</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                        <input class="form-control" formControlName="faculte">
+                                    </div>
+                                </div>
+                                <div class="form-group" >
+                                    <label class=" form-control-label">Laboratoire</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                                        <input class="form-control" formControlName="laboratoire">
+                                    </div>
+                                </div>
+                                 <div class="form-group" >
+                                    <label class=" form-control-label">Doctorale</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                                        <input class="form-control" formControlName="doctorale">
+                                    </div>
+                                </div>
+                                <div class="form-group" >
+                                    <label class=" form-control-label">These</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-usd"></i></div>
+                                        <input class="form-control" formControlName="these">
+                                    </div>
+                                </div>
+                                </div>
+                                 <div class="row">
+                                        <div class="form-group ">
+                                    <label class=" form-control-label">Startup</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                        <input class="form-control" formControlName="startup">
+                                    </div>
+                                </div>
+                                <div class="form-group" >
+                                    <label class=" form-control-label">Secteur</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                                        <input class="form-control" formControlName="secteur">
+                                    </div>
+                                </div>
+                                 <div class="form-group" >
+                                    <label class=" form-control-label">Impact</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                                        <input class="form-control" formControlName="impact">
+                                    </div>
+                                </div>
+                                <div class="form-group" >
+                                    <label class=" form-control-label">Problematique</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-usd"></i></div>
+                                        <input class="form-control" formControlName="problematique">
+                                    </div>
+                                </div>
+                                </div>
+                                 <div class="row">
+                                        <div class="form-group ">
+                                    <label class=" form-control-label">Solution</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                        <input class="form-control" formControlName="solution">
+                                    </div>
+                                </div>
+                                <div class="form-group" >
+                                    <label class=" form-control-label">Date debut</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                                        <input class="form-control" formControlName="date_start">
+                                    </div>
+                                </div>
+                                 <div class="form-group" >
+                                    <label class=" form-control-label">Date fin</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                                        <input class="form-control" formControlName="date_end">
+                                    </div>
+                                </div>
+                                <div class="form-group" >
+                                    <label class=" form-control-label">Maturation</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-usd"></i></div>
+                                        <input class="form-control" formControlName="maturation">
+                                    </div>
+                                </div>
+                                </div>
+                                 <div class="row">
+                                        <div class="form-group ">
+                                    <label class=" form-control-label">Interet</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                        <input class="form-control" formControlName="interet">
+                                    </div>
+                                </div>
+                                <div class="form-group" >
+                                    <label class=" form-control-label">Competences</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                                        <input class="form-control" formControlName="competences">
+                                    </div>
+                                </div>
+                                 <div class="form-group" >
+                                    <label class=" form-control-label">Domaine de recherche</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                                        <input class="form-control" formControlName="domaine_recherche">
+                                    </div>
+                                </div>
+                                <div class="form-group" >
+                                    <label class=" form-control-label">Motscles </label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-usd"></i></div>
+                                        <input class="form-control" formControlName="motscles">
+                                    </div>
+                                </div>
+                                </div>
+                                 <div class="row">
+                                        <div class="form-group ">
+                                    <label class=" form-control-label">Publication</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                        <input class="form-control" formControlName="publication">
+                                    </div>
+                                </div>
+                                <div class="form-group" >
+                                    <label class=" form-control-label">Publication_faire</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                                        <input class="form-control" formControlName="publication_faire">
+                                    </div>
+                                </div>
+                                 <div class="form-group" >
+                                    <label class=" form-control-label">Souhait</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                                        <input class="form-control" formControlName="souhait">
+                                    </div>
+                                </div>
+                                <div class="form-group" >
+                                    <label class=" form-control-label">Cv</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-usd"></i></div>
+                                        <input class="form-control" formControlName="cv">
+                                    </div>
+                                </div>
+                                </div>
+                                <button type="submit" class="btn btn-secondary">Creer</button>
+                            </form>
+                               
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+
+               </div>
+
+
+</div><!-- .animated -->

@@ -1,0 +1,46 @@
+
+            <div class="animated fadeIn">
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <strong class="card-title">Liste des utilisateurs</strong>
+                            </div>
+                            <div class="card-body">
+                                <table id="bootstrap-data-table" class="table table-striped table-sm table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Last name</th>
+                                            <th>First name</th>
+                                            <th>Email</th>
+                                            <th>Fonction</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                     
+                                         @for (user of users(); track user){
+                                            
+                                              <tr>
+                                                    <td>{{ user.last_name }}</td>
+                                                    <td>{{ user.first_name }}</td>
+                                                    <td>{{ user.email }}</td>
+                                                    <td>{{ user.fonction }}</td>
+                                                    <td>
+                                                        <a  href="#" type="button" class="btn btn-warning btn-sm"><i class="fa fa-edit"></i>&nbsp;</a>
+                                                        <button (click)="onDelete(user)" style="margin-left: 3px;" class="btn btn-danger btn-sm"><i class="fa fa-remove"></i>&nbsp;</button>
+                                    
+                                                    </td>
+                                              </tr>
+                                         }
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div><!-- .animated -->
+       

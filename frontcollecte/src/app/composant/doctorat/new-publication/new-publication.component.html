@@ -1,0 +1,36 @@
+ <div class="animated fadeIn">
+
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <strong>Modification de</strong> <small> Doctorant</small>
+                            </div>
+                        
+                            <div class="card-body card-block">
+                            <form  [formGroup]="doctoratForm" (ngSubmit)="onUpdate()">
+                                
+                                 <div class="row">
+                                        <div class="form-group ">
+                                    <label class=" form-control-label">Publication</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                        <input class="form-control" formControlName="publication">
+                                    </div>
+                                </div>
+                              
+                                </div>
+                                <button type="submit" class="btn btn-secondary">Modifier</button>
+                            </form>
+                               
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+
+               </div>
+
+
+</div><!-- .animated -->

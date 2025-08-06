@@ -1,0 +1,125 @@
+<div class="animated fadeIn">
+                <div class="row">
+<div class="dashboard-container">
+ <div class="card">
+                            <div class="card-header">
+                                <strong class="card-title">Detail </strong>
+                                <a style="margin-left: 5px;" [routerLink]="['/home/doctorat-publication',currentID]" routerLinkActive="router-link-active"  class="btn btn-primary btn-sm">publier</a>
+                            </div>
+</div>
+     @if(data!==null){
+  <section class="dashboard-section">
+    <h2>👤 Identité</h2>
+    <div class="dashboard-grid">
+      <div><strong>Nom :</strong> {{ data.last_name }}</div>
+      <div><strong>Prénom :</strong> {{ data.first_name }}</div>
+      <div><strong>Email :</strong> {{ data.email }}</div>
+      <div><strong>Téléphone :</strong> {{ data.telephone }}</div>
+    </div>
+  </section>
+
+  <section class="dashboard-section">
+    <h2>🎓 Parcours académique</h2>
+    <div class="dashboard-grid">
+      <div><strong>Faculté :</strong> {{ data.faculte }}</div>
+      <div><strong>Laboratoire :</strong> {{ data.laboratoire }}</div>
+      <div><strong>École doctorale :</strong> {{ data.doctorale }}</div>
+      <div><strong>Domaine de recherche :</strong> {{ data.domaine_recherche }}</div>
+      <div><strong>Compétences :</strong> {{ data.competences }}</div>
+      <div><strong>Mots-clés :</strong> {{ data.motscles }}</div>
+    </div>
+  </section>
+
+  <section class="dashboard-section">
+    <h2>📚 Thèse & Recherche</h2>
+    <div class="dashboard-grid">
+      <div><strong>Sujet de thèse :</strong> {{ data.these }}</div>
+      <div><strong>Problématique :</strong> {{ data.problematique }}</div>
+      <div><strong>Solution proposée :</strong> {{ data.solution }}</div>
+      <div><strong>Date de début :</strong> {{ data.date_start }}</div>
+      <div><strong>Date de fin :</strong> {{ data.date_end }}</div>
+      <div><strong>Maturation :</strong> {{ data.maturation }}</div>
+      <div><strong>Intérêt :</strong> {{ data.interet }}</div>
+    </div>
+  </section>
+
+  <section class="dashboard-section">
+    <h2>🚀 Innovation / Startup</h2>
+    <div class="dashboard-grid">
+      <div><strong>Startup :</strong> {{ data.startup }}</div>
+      <div><strong>Secteur :</strong> {{ data.secteur }}</div>
+      <div><strong>Impact :</strong> {{ data.impact }}</div>
+    </div>
+  </section>
+
+  <section class="dashboard-section">
+    <h2>📄 Production scientifique</h2>
+    <div class="dashboard-grid">
+      <div><strong>Publications existantes :</strong> {{ data.publication }}</div>
+      <div><strong>Publications à faire :</strong> {{ data.publication_faire }}</div>
+      <div><strong>Souhaits :</strong> {{ data.souhait }}</div>
+    </div>
+  </section>
+
+  <section class="dashboard-section">
+    <h2>📎 Documents</h2>
+    <div class="dashboard-grid">
+      <div>
+        <strong>CV :</strong>
+        <a  target="_blank" class="cv-link">📄 Télécharger le CV</a>
+      </div>
+    </div>
+  </section>
+}
+</div>
+
+   </div>
+</div>
+////////////////////////////////////////////// CSS////////////
+.dashboard-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', sans-serif;
+  color: #2e3c4f;
+}
+
+.dashboard-section {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-section h2 {
+  margin-bottom: 1rem;
+  color: #0066cc;
+  font-size: 1.4rem;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 0.5rem;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  font-size: 15px;
+}
+
+.dashboard-grid div {
+  background: #f9f9f9;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  line-height: 1.4;
+}
+
+.cv-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cv-link:hover {
+  text-decoration: underline;
+}

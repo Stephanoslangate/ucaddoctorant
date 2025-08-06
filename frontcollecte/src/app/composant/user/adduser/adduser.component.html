@@ -1,0 +1,77 @@
+ <div class="animated fadeIn">
+
+                <div class="row">
+
+                    <div class="col-xs-10 col-sm-10">
+                        <div class="card">
+                            <div class="card-header">
+                                <strong>Ajout </strong> <small> des utilisateurs</small>
+                            </div>
+                        
+                            <div class="card-body card-block">
+                            <form  [formGroup]="usertForm" (ngSubmit)="onSave()">
+                                <div class="row">
+                                        <div class="form-group ">
+                                    <label class=" form-control-label">username</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                        <input class="form-control" formControlName="username">
+                                    </div>
+                                </div>
+                                <div class="form-group" >
+                                    <label class=" form-control-label">First_name</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                                        <input class="form-control" formControlName="first_name">
+                                    </div>
+                                </div>
+                                 <div class="form-group" >
+                                    <label class=" form-control-label">Email</label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                                        <input class="form-control" formControlName="email">
+                                    </div>
+                                </div>
+                                <div class="form-group" >
+                                    <label class=" form-control-label">Telephone </label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-usd"></i></div>
+                                        <input class="form-control" formControlName="telephone">
+                                    </div>
+                                </div>
+                                 <div class="form-group" >
+                                    <label class=" form-control-label">Last name </label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-usd"></i></div>
+                                        <input class="form-control" formControlName="last_name">
+                                    </div>
+                                </div>
+                                 <div class="form-group" >
+                                    <label class=" form-control-label">Mot de pass </label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-usd"></i></div>
+                                        <input class="form-control" formControlName="password1">
+                                    </div>
+                                </div>
+                                 <div class="form-group" >
+                                    <label class=" form-control-label">Fonction </label>
+                                    <div class="input-group">
+                                        <div class="input-group-addon"><i class="fa fa-usd"></i></div>
+                                        <input class="form-control" formControlName="fonction">
+                                    </div>
+                                </div>
+                                </div>
+                             
+                                <button type="submit" class="btn btn-secondary">Creer</button>
+                            </form>
+                               
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+
+               </div>
+
+
+</div><!-- .animated -->

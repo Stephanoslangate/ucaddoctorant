@@ -1,0 +1,11 @@
+export interface User {
+    id?: number;
+    last_name: string;
+    first_name: string;
+    email: string;
+    telephone: string;
+    password1: string;
+    username: string;
+    fonction: string;
+
+}
