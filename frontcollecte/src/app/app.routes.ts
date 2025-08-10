@@ -11,6 +11,7 @@ import { doctoratdetailsResolver } from './resolver/doctoratdetails.resolver';
 import { EditComponent } from './composant/doctorat/edit/edit.component';
 import { NewPublicationComponent } from './composant/doctorat/new-publication/new-publication.component';
 import { TableauBoardComponent } from './composant/tableau-board/tableau-board.component';
+import { authGuard } from './guards/auth.guard';
 
 export const routes: Routes = [
     {
@@ -25,6 +26,7 @@ export const routes: Routes = [
     {
         path:"home",
         component:DashboardComponent,
+        canActivate: [authGuard],
         children:[
             {
                 path:"dashboard",

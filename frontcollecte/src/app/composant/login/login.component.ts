@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthentifactionService, Credentials } from './data-source/authentifaction.service';
@@ -10,7 +10,12 @@ import { AuthentifactionService, Credentials } from './data-source/authentifacti
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
-export class LoginComponent {
+export class LoginComponent implements OnInit{
+  ngOnInit(): void {
+    if(localStorage.getItem('token')){
+      localStorage.removeItem('token')
+    }
+  }
   private route = inject(Router);
   private authentificationService = inject(AuthentifactionService);
   formLogin = new FormGroup(
@@ -21,6 +26,9 @@ export class LoginComponent {
   );
   
   onSubmit(){
+    if(localStorage.getItem('token')){
+      localStorage.removeItem('token')
+    }
     this.authentificationService.login(this.formLogin.value as Credentials).subscribe(
       (value) => {
         if(value){
